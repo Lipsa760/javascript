@@ -37,7 +37,7 @@ example:
 ### step 3 : JavaScript file
 Here I use a inbuilt javascript function that is addEventListener() for target the properties and change the properties when we click the properties
 Example-
-```color.addEventListener('change', () => {
+color.addEventListener('change', () => {
   targetDiv.style.color = color.value;
-});```
+});
 Here the color will be changed when we click any color from the dropdown option.
