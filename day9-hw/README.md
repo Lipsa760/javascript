@@ -23,10 +23,10 @@ It gives the styling to the html file
 
 Here I use a inbuilt javascript function that is addEventListener() for target and add the list.
 
-Button.addEventListener("click", () => {
+```Button.addEventListener("click", () => {
 const newText = text.value;
 const newParagraph = document.createElement("p");
 newParagraph.textContent = newText;
 paragraph.appendChild(newParagraph);
 text.value = "";
-});
+});```
