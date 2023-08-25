@@ -4,7 +4,7 @@ This is a simple HTML and JavaScript code that allows you to change the properti
 ### Step 1: HTML file
 The HTML code creates a container div inside this container there are many dropdowns and a target div which style will be change. 
 example:
-``<div class="container">
+```<div class="container">
     <label for="color">Color:</label>
     <select id="color">
       <option value="black">Black</option>
@@ -30,14 +30,14 @@ example:
       <option value="navy">Navy</option>
     </select>
 </div>
-  <div id="targetDiv">Geekster a great learning platform for Fullstack Web Development</div> ``
+  <div id="targetDiv">Geekster a great learning platform for Fullstack Web Development</div> ```
 
   ### Step 2 : css file
   It gives the styling to the html file
 ### step 3 : JavaScript file
 Here I use a inbuilt javascript function that is addEventListener() for target the properties and change the properties when we click the properties
 Example-
-``color.addEventListener('change', () => {
+```color.addEventListener('change', () => {
   targetDiv.style.color = color.value;
-});``
+});```
 Here the color will be changed when we click any color from the dropdown option.
