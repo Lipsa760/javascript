@@ -1,4 +1,3 @@
-
 const canvas = document.getElementById("canvas");
 const deleteButton = document.getElementById("dltbtn");
 const undoButton = document.getElementById("undobtn");
