@@ -1,39 +1,32 @@
-.container{
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
+body{
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(13, 47, 66);
+}
+.field{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
 }
-#circle{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center;
-    display: flex;
-}
-.shape{
-
-    position: relative;
-    width: 70px;
-    height: 70px;
+canvas{
+    width: 90%;
+    height: 85vh;
     background-color: white;
-    z-index: 100;
-    margin-top: 40px;
-    margin-left: 40px;
-   
 }
-.triangle{
-    background-color: transparent;
-    position: relative;
-    left: 38px;
-    top: 40px;
-    width: 0;
-    height: 0;
-    border-bottom: 75px solid white;
-    border-right: 75px solid transparent;
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.tools .button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 0 15px;
+    color: white;
+    background-color:rgb(13, 47, 66);
+    font-weight: bold;
 }
