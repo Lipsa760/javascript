@@ -1,70 +1,19 @@
-# Assignment - change shape and color
+# Drawing App
 
-This is a simple HTML, CSS, and JavaScript project that creates a circle that can change color and shape.
+A basic web-based paint application built using HTML, CSS, and JavaScript. This app allows users to draw on a canvas, clear the drawing, and undo the last drawn stroke.
 
-## step-1 : HTML
+## HTML
 
-The HTML code creates a container div with a circle div inside it. The circle div has a shape div inside it. The shape div is initially a circle, but can be changed to a triangle by clicking the "change shape" button.
+The paint app consists of a canvas element where users can draw.
 
-```
-    <div class="container">
-    <div id="circle">
-        <div class="shape"></div>
-    </div>
-    <button id="color">change color</button>
-    <button id="changeShape">change shape</button>
-</div>
-```
+## CSS
 
-### Step-2 : css file
+The canvas is styled using CSS to provide a border.
 
-It gives the styling to the html file . It positioned the circle in center of the page and center the shapes inside the circle.
+## Javascript
 
-## step-3 : JavaScript
+Drawing: When the user presses the mouse button (mousedown) on the canvas, the startPosition function is triggered. This sets the painting flag to true and records the initial position. The mousemove event triggers the draw function, which draws lines on the canvas as the mouse moves. When the user releases the mouse button (mouseup), the endPosition function is called, and the drawn stroke is saved as an ImageData object in the strokes array.
 
-The JavaScript code adds event listeners to the "change color" and "change shape" buttons. The "change color" button changes the background color of the circle div to a random color. The "change shape" button changes the shape of the shape div from a circle to a triangle and vice versa.
+Clear: The "Clear" button clears the entire canvas by using the clearRect method. It also clears the strokes array to remove any saved strokes.
 
-```
-var Color = [
-  "green",
-  "navyblue",
-  "cyan",
-  "black",
-  "Crimson",
-  "voilet",
-  "blue",
-  "pink",
-  "maroon",
-  "indigo",
-  "yellow",
-  "beige",
-  "purple",
-  "orange",
-  "aqua",
-  "lime",
-];
-var index = 0;
-const circle = document.getElementById("circle");
-const shape = document.querySelector(".shape");
-const Changecolor = document.querySelector("#color");
-const changeShape = document.querySelector("#changeShape");
-Changecolor.addEventListener("click", () => {
-  if (index === Color.length) {
-    index = 0;
-  }
-  circle.style.backgroundColor = Color[index];
-  index++;
-});
-var Tringle = false;
-changeShape.addEventListener("click", () => {
-  if (!Tringle) {
-    var Shape = document.querySelector(".shape");
-    Shape.className = "triangle";
-    Tringle = true;
-  } else {
-    var shape = document.querySelector(".triangle");
-    shape.className = "shape";
-    Tringle = false;
-  }
-});
-```
+Undo: The "Undo" button uses the putImageData method to redraw the previously saved strokes when clicked. The undoButton event listener removes the last stroke from the strokes array and calls the redraw function, which iterates through the strokes array and redraws the saved strokes.
