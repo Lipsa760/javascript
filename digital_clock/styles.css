@@ -1,0 +1,42 @@
+ 
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1498887983185-44bfeb64b956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(247, 242, 242);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.clock {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock > div {
+    background-color:black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.clock .colon {
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
