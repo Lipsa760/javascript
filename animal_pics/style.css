@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    width: 400px; 
+    margin: 20px; 
+}
+
+.title {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.btn {
+    background-color: #007BFF; 
+    color: #fff;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    margin-bottom: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+.animal-img {
+    max-width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.animal-name {
+    margin-top: 20px; 
+    background-color: #007BFF; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px; 
+    font-weight: 600;
+}
