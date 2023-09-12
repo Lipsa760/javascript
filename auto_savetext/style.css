@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 90vh;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;  
+    font-size: 15px;
+    border: 2px solid #d4cbcb;
+    min-height:180px;
+}
